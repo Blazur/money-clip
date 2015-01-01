@@ -1,0 +1,31 @@
+.theme-primary {
+  background-color: #00bcd4 !important;
+}
+.theme-primary-dark {
+  background-color: #0097a7 !important;
+}
+.theme-primary-light {
+  background-color: #80deea !important;
+}
+.theme-accent {
+  background-color: #3d5afe !important;
+}
+.theme-accent-dark {
+  background-color: #304ffe !important;
+}
+.sticky {
+  position: fixed;
+}
+md-toolbar.sticky {
+  background-color: #fff !important;
+  height: 15vh;
+}
+md-toolbar.sticky * {
+  color: #000;
+}
+header.header {
+  width: 100vw;
+  height: 100vh;
+  background-color: #00bcd4;
+  padding-top: 15vh;
+}

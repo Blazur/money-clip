@@ -8,7 +8,7 @@ angular.module('app.home', [])
   $stateProvider
     .state('app.home', {
       url: '/',
-      template: 'Home'
+      templateUrl: 'app/home/home.tpl.html'
     });
 }])
 .controller('HomeController', ['$scope', function($scope) {
