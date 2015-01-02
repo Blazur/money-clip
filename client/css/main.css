@@ -8,17 +8,25 @@
   background-color: #80deea !important;
 }
 .theme-accent {
-  background-color: #3d5afe !important;
+  background-color: #ff1744 !important;
 }
 .theme-accent-dark {
-  background-color: #304ffe !important;
+  background-color: #d50000 !important;
+}
+.bg-light-grey {
+  background-color: #dedede;
 }
 .sticky {
   position: fixed;
 }
+.fab.sticky {
+  bottom: 20px;
+  right: 20px;
+}
 md-toolbar.sticky {
-  background-color: #fff !important;
-  height: 15vh;
+  height: 12vh;
+  min-height: 12vh;
+  max-height: 12vh;
 }
 md-toolbar.sticky * {
   color: #000;
@@ -26,6 +34,7 @@ md-toolbar.sticky * {
 header.header {
   width: 100vw;
   height: 100vh;
-  background-color: #00bcd4;
+  background: url("../images/poly3.svg");
   padding-top: 15vh;
+  color: #fff;
 }

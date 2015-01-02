@@ -8,8 +8,8 @@ angular.module('app', [
   'lumx',
   'ngMaterial',
   'app.common',
-  'app.home'
-
+  'app.home',
+  'duScroll'
 ])
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/');

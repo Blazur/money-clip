@@ -3,9 +3,22 @@
   <div ui-view></div>
 </div> -->
 
-<div layout="column">
-  <md-toolbar class="sticky md-whiteframe-z1">
-    <h1>Blazur Labs</h1>
+<div layout-gt-sm="column">
+  <md-toolbar class="sticky md-whiteframe-z1 theme-primary">
+    <section layout="row">
+      <div flex="15">
+        <a class="btn btn--m btn--black btn--flat tc-white" lx-ripple="white">Blazur Labs</a>
+      </div>
+      <div flex="10">
+        <a class="btn btn--m btn--black btn--flat tc-white" lx-ripple="white">Services</a>
+      </div>
+      <div flex="10">
+        <a class="btn btn--m btn--black btn--flat tc-white" lx-ripple="white">About</a>
+      </div>
+      <div flex="10">
+        <a class="btn btn--m btn--black btn--flat tc-white" lx-ripple="white">Blog</a>
+      </div>
+    </section>
   </md-toolbar>
   <md-content id="main" ui-view></md-content>
 </div>

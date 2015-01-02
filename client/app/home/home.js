@@ -11,6 +11,6 @@ angular.module('app.home', [])
       templateUrl: 'app/home/home.tpl.html'
     });
 }])
-.controller('HomeController', ['$scope', function($scope) {
-
+.controller('HomeController', ['$scope', 'Scroller', function($scope, Scroller) {
+  _.extend(this, Scroller);
 }]);
