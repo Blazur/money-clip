@@ -7,6 +7,7 @@ angular.module('app.common', [])
 .factory('SEO', [function(){
   var _metaDesc = '';
   var _metas = {};
+  var _keywords = '';
 
   var changeMetaDesc = function(desc){
     _metaDesc = desc;
@@ -22,17 +23,34 @@ angular.module('app.common', [])
     return v;
   };
 
-  var resetMetas = function(){
+  var reset = function(){
     _.forEach(_metas, function(val, k){
       _metas[k] = '';
     });
+    _keywords = '';
+  };
+
+  var setKeyWords = function(kw){
+    _.forEach(kw, function(keyword){
+      if(!!_keywords){
+        _keywords += keyword;
+      } else {
+        _keywords += ', ' + keyword;
+      }
+    });
+  };
+
+  var getKeyWords = function(){
+    return _keywords;
   };
 
   return {
     changeMetaDesc: changeMetaDesc,
     getMetaDesc: getMetaDesc,
     changeMetaVal: changeMetaVal,
-    resetMetas: resetMetas
+    reset: reset,
+    setKeyWords: setKeyWords,
+    getKeyWords: getKeyWords
   };
 
 }])

@@ -1,6 +1,15 @@
 <div>
   <header class="header" scroll-item layout-gt-sm="column" layout-align="start center">
-
+    <div flex="30" class="tagline">
+      <h1 class="fs-title">Blazur Labs</h1>
+    </div>
+    <div flex="70" class="info">
+      <p>
+        Blah blah blah blah blah blah
+      </p>
+    </div>
+    <div flex>
+    </div>
   </header>
 
   <div class="fab sticky">
@@ -11,20 +20,47 @@
     </a>
   </div>
 
-  <section scroll-item class="scroll-item" layout="row">
-    <div flex="30" class="bg-light-grey">
-      yo
+  <section scroll-item class="scroll-item service-container bg-light-grey" layout="row" layout-align="space-between start">
+    <div flex="15" id="services">
+      <md-list>
+
+        <md-item>
+          <md-item-content ui-sref-active="active" class="btn btn--m btn--black btn--flat list-btn" lx-ripple ui-sref="app.home.web">
+            <!-- <a class=""lx-ripple ui-sref="app.home.web">Web Apps</a> -->Web Apps
+          </md-item-content>
+        </md-item>
+
+        <md-item>
+          <md-item-content class="list-btn btn btn--m btn--black btn--flat" ui-sref-active="active" ui-sref="app.home.mobile" lx-ripple>
+            <!-- <a ui-sref="app.home.mobile">Mobile Apps</a> --> Mobile Apps
+          </md-item-content>
+        </md-item>
+
+        <md-item>
+          <md-item-content class="list-btn btn btn--m btn--black btn--flat" ui-sref-active="active" ui-sref="app.home.design" lx-ripple>
+            <!-- <a>Design</a> -->Design
+          </md-item-content>
+        </md-item>
+
+        <md-item>
+          <md-item-content class="list-btn btn btn--m btn--black btn--flat" ui-sref-active="active" ui-sref="app.home.training" lx-ripple>
+            <!-- <a>Training</a> -->Training
+          </md-item-content>
+        </md-item>
+
+      </md-list>
     </div>
-    <div flex="70">
-      yo
-    </div>
+    <div flex="85" ui-view id="desc"></div>
   </section>
 
-  <section scroll-item class="scroll-item theme-accent-dark">
-    <h1>2nd</h1>
+  <section scroll-item class="scroll-item theme-primary">
+    <h1>About</h1>
+    <h1>About</h1>
+    <h1>About</h1>
+    <h1>About</h1>
   </section>
 
-  <section scroll-item class="scroll-item theme-primary-dark">
+  <section scroll-item class="scroll-item">
     <h1>3rd</h1>
   </section>
 </div>

@@ -1,10 +1,41 @@
 header.header
   width 100vw
-  height 100vh
-  background url(../images/poly3.svg)
-  padding-top 15vh
+  height 92vh
+  background url(../images/poly3.svg) no-repeat
+  padding-top toolbar-padding
   color white
+  border-bottom solid 3px primary
+  @media screen and (min-width: 1200px)
+    background url(../images/poly3_big.svg) no-repeat
 
+#services
+  // padding-left 20px
+  // padding-top toolbar-padding - 10
+  // margin-right 20px
+  md-item-content
+    margin-bottom 10px
+    padding-top 12px
+  .active
+    border-right 2px accent solid
+    color white
+    background-color primary-light
 
-// [scroll-item="1"]
-//   background-color accent
+#desc
+  // padding-top toolbar-padding - 12
+  height 200px
+  .box
+    background white
+  // background white
+
+.tagline
+  h1
+    font-size 3em
+    margin-bottom 0px
+.info
+  font-size 2.2em
+
+.service-container
+  border-bottom accent solid 3px
+
+.list-btn
+  width 100%
