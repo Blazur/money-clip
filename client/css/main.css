@@ -1,0 +1,84 @@
+.theme-primary {
+  background-color: #00bcd4 !important;
+}
+.theme-primary-dark {
+  background-color: #0097a7 !important;
+}
+.theme-primary-light {
+  background-color: #80deea !important;
+}
+.theme-accent {
+  background-color: #ff1744 !important;
+}
+.theme-accent-dark {
+  background-color: #d50000 !important;
+}
+.bg-light-grey {
+  background-color: #efefef;
+}
+.sticky {
+  position: fixed;
+}
+.fab.sticky {
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+md-toolbar.sticky {
+  height: 12vh;
+  max-height: 60px;
+  padding-top: 20px;
+  z-index: 10000;
+}
+md-toolbar.sticky .toolbar-item {
+  text-align: center;
+}
+md-toolbar.sticky * {
+  color: #000;
+}
+header.header {
+  width: 100vw;
+  height: 92vh;
+  background: url("../images/poly3.svg") no-repeat center center;
+  -webkit-background-size: cover;
+  padding-top: 15vh;
+  color: #fff;
+  border-bottom: solid 3px #00bcd4;
+}
+@media screen and (min-width: 1200px) {
+  header.header {
+    background: url("../images/poly3_big.svg") no-repeat center center;
+  }
+}
+#services md-item-content {
+  padding-top: 12px;
+}
+#services .active {
+  border-right: 2px #ff1744 solid;
+  color: #fff;
+  background-color: #80deea;
+}
+#desc {
+  height: 200px;
+}
+#desc .box {
+  background: #fff;
+}
+.tagline {
+  margin-top: 10px;
+}
+.tagline h1 {
+  font-size: 3em;
+  margin-bottom: 0px;
+}
+.info .fs-body-1 {
+  font-size: 2em;
+}
+.service-container {
+  border-bottom: #ff1744 solid 3px;
+  max-height: 42vh;
+  min-height: 42vh;
+}
+.list-btn {
+  width: 100%;
+}

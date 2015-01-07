@@ -6,10 +6,10 @@
 angular.module('app', [
   'ui.router',
   'lumx',
+  'ngFx',
   'ngMaterial',
   'app.common',
   'app.home'
-
 ])
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/');
