@@ -22,11 +22,16 @@
 .fab.sticky {
   bottom: 20px;
   right: 20px;
+  z-index: 9999;
 }
 md-toolbar.sticky {
   height: 12vh;
   max-height: 60px;
   padding-top: 20px;
+  z-index: 10000;
+}
+md-toolbar.sticky .toolbar-item {
+  text-align: center;
 }
 md-toolbar.sticky * {
   color: #000;
@@ -34,18 +39,18 @@ md-toolbar.sticky * {
 header.header {
   width: 100vw;
   height: 92vh;
-  background: url("../images/poly3.svg") no-repeat;
+  background: url("../images/poly3.svg") no-repeat center center;
+  -webkit-background-size: cover;
   padding-top: 15vh;
   color: #fff;
   border-bottom: solid 3px #00bcd4;
 }
 @media screen and (min-width: 1200px) {
   header.header {
-    background: url("../images/poly3_big.svg") no-repeat;
+    background: url("../images/poly3_big.svg") no-repeat center center;
   }
 }
 #services md-item-content {
-  margin-bottom: 10px;
   padding-top: 12px;
 }
 #services .active {
@@ -59,15 +64,20 @@ header.header {
 #desc .box {
   background: #fff;
 }
+.tagline {
+  margin-top: 10px;
+}
 .tagline h1 {
   font-size: 3em;
   margin-bottom: 0px;
 }
-.info {
-  font-size: 2.2em;
+.info .fs-body-1 {
+  font-size: 2em;
 }
 .service-container {
   border-bottom: #ff1744 solid 3px;
+  max-height: 42vh;
+  min-height: 42vh;
 }
 .list-btn {
   width: 100%;

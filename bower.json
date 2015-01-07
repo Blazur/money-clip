@@ -21,6 +21,7 @@
     "angular-material": "~0.6.1",
     "lumx": "~0.2.41",
     "lodash": "~2.4.1",
-    "angular-scroll": "~0.6.4"
+    "angular-scroll": "~0.6.4",
+    "ngFx": "~1.0.5"
   }
 }

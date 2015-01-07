@@ -1,11 +1,11 @@
 <div>
   <header class="header" scroll-item layout-gt-sm="column" layout-align="start center">
     <div flex="30" class="tagline">
-      <h1 class="fs-title">Blazur Labs</h1>
+      <h1 class="fs-headline">Blazur Labs</h1>
     </div>
     <div flex="70" class="info">
-      <p>
-        Blah blah blah blah blah blah
+      <p class="fs-title">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est excepturi voluptatem, quod non animi. Eum error ipsum
       </p>
     </div>
     <div flex>
@@ -25,32 +25,32 @@
       <md-list>
 
         <md-item>
-          <md-item-content ui-sref-active="active" class="btn btn--m btn--black btn--flat list-btn" lx-ripple ui-sref="app.home.web">
-            <!-- <a class=""lx-ripple ui-sref="app.home.web">Web Apps</a> -->Web Apps
+          <md-item-content reveal-start="app.home.web"  class="btn btn--m btn--black btn--flat list-btn" lx-ripple>
+            Web Apps
           </md-item-content>
         </md-item>
 
         <md-item>
-          <md-item-content class="list-btn btn btn--m btn--black btn--flat" ui-sref-active="active" ui-sref="app.home.mobile" lx-ripple>
-            <!-- <a ui-sref="app.home.mobile">Mobile Apps</a> --> Mobile Apps
+          <md-item-content reveal-start="app.home.mobile"  class="list-btn btn btn--m btn--black btn--flat"  lx-ripple>
+            Mobile Apps
           </md-item-content>
         </md-item>
 
         <md-item>
-          <md-item-content class="list-btn btn btn--m btn--black btn--flat" ui-sref-active="active" ui-sref="app.home.design" lx-ripple>
-            <!-- <a>Design</a> -->Design
+          <md-item-content reveal-start="app.home.design" class="list-btn btn btn--m btn--black btn--flat"  lx-ripple>
+            Design
           </md-item-content>
         </md-item>
 
         <md-item>
-          <md-item-content class="list-btn btn btn--m btn--black btn--flat" ui-sref-active="active" ui-sref="app.home.training" lx-ripple>
-            <!-- <a>Training</a> -->Training
+          <md-item-content reveal-start="app.home.training" class="list-btn btn btn--m btn--black btn--flat"  lx-ripple>
+            Training
           </md-item-content>
         </md-item>
 
       </md-list>
     </div>
-    <div flex="85" ui-view id="desc"></div>
+    <div flex="85" ui-view id="desc" reveal></div>
   </section>
 
   <section scroll-item class="scroll-item theme-primary">
@@ -61,6 +61,10 @@
   </section>
 
   <section scroll-item class="scroll-item">
-    <h1>3rd</h1>
+    <h1>Contact us</h1>
+    <h1>Contact us</h1>
+    <h1>Contact us</h1>
+    <h1>Contact us</h1>
+    <h1>Contact us</h1>
   </section>
 </div>
